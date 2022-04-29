@@ -2,6 +2,7 @@ const path = require('path')
 
 module.exports = {
 	entry: './src/index.tsx',
+	mode: 'development',
 	module: {
 		rules: [
 			{
@@ -11,7 +12,7 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				use: 'css-loader',
+				use: [ "style-loader", 'css-loader' ]
 			}
 		],
 	},

@@ -1,18 +1,12 @@
 import * as React from "react"
-import * as ReactDOM from "react-dom"
+import * as ReactDOM from "react-dom/client"
+
 import ChatComponent from './components/ChatComponent'
+const styles = require('react-chatbot-kit/build/main.css')
 
-import ActionProvider from './ActionProvider'
-import MessageParser from './MessageParser'
-import config from './config'
-
-ReactDOM.render(
-	<div>
-		<h1>Say hello</h1>
-		<ChatComponent
-			actionProvider={ActionProvider}
-			messageParser={MessageParser}
-			config={config} />
-	</div>,
-	document.getElementById("root")
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+		<ChatComponent />
+  </React.StrictMode>
 )
