@@ -1,6 +1,12 @@
 // ActionProvider starter code
 class ActionProvider {
-   constructor(
+  createChatBotMessage: any
+  setState: any
+  createClientMessage: any
+  stateRef: any
+  createCustomMessage: any
+  
+  constructor(
     createChatBotMessage: any,
     setStateFunc: any,
     createClientMessage: any,
@@ -8,11 +14,11 @@ class ActionProvider {
     createCustomMessage: any,
     ...rest: any[]
   ) {
-    this.createChatBotMessage:any = createChatBotMessage;
-    this.setState:any = setStateFunc;
-    this.createClientMessage:any = createClientMessage;
-    this.stateRef:any = stateRef;
-    this.createCustomMessage:any = createCustomMessage;
+    this.createChatBotMessage = createChatBotMessage
+    this.setState = setStateFunc
+    this.createClientMessage = createClientMessage
+    this.stateRef = stateRef
+    this.createCustomMessage = createCustomMessage
   }
 }
 

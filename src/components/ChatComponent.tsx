@@ -1,10 +1,14 @@
-import * as React from "react"
 import Chatbot from 'react-chatbot-kit'
-import ChatElement from '../ChatElement'
+import ChatInterface from '../ChatInterface'
 import 'react-chatbot-kit/build/main.css'
+import * as React from "react"
 
 export default class ChatComponent extends React.Component<ChatInterface, {}> {
-	constructor(props) {
+	config: any
+	actionProvider: any
+	messageParser: any
+
+	constructor(props: any) {
 		super(props)
 		this.config=props.config
 		this.actionProvider=props.actionProvider

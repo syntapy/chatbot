@@ -1,5 +1,5 @@
 export default interface Chat{
-	config: obejct
-	actionProvider: object
-	messageParser: object
+	config: any
+	actionProvider: any
+	messageParser: any
 }
