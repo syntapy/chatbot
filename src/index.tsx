@@ -1,5 +1,6 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
+const index_styles = require('./index.css')
 
 import ChatComponent from './components/ChatComponent'
 const styles = require('react-chatbot-kit/build/main.css')
