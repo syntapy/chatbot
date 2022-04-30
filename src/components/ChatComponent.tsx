@@ -8,13 +8,11 @@ const styles = require('react-chatbot-kit/build/main.css')
 
 function ChatComponent() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Chatbot 
-          config={config}
-          actionProvider={ActionProvider}
-          messageParser={MessageParser} />
-      </header>
+    <div className="chatui">
+      <Chatbot 
+        config={config}
+        actionProvider={ActionProvider}
+        messageParser={MessageParser} />
     </div>
   )
 }
