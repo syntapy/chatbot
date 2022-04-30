@@ -1,8 +1,23 @@
 $body-bg: #012
+/*color: #585858*/
 $chat-bg: #fff
 $chat-border: #000000
 $dark-grey: #c0d8d8
 $lighter-grey: #efefef
+$chat-input-bg: #232
+$chat-input-send-bg: #2898ec
+$error-header: #1d1d1d
+$user-msg-bg: #f1f1f1
+$user-msg-color: #585858
+$bot-msg-bg: #2898ec
+$user-msg-arrow: #f1f1f1
+$bot-msg-arrow: #2898ec
+$error-docs-color: rgb(56, 104, 139)
+$error-docs-border: rgb(40, 152, 236)
+$chat-header-color: #514f4f
+$user-avatar-bg: #3d4e8d
+$bot-avatar-bg: #494646
+$bot-avatar-letter-color: #1d1d1d
 
 body
 	background-color: $body-bg
@@ -63,7 +78,7 @@ body
 	display: flex
 	align-items: center
 	font-size: 0.85rem
-	color: #514f4f
+	color: $chat-header-color
 	padding: 12.5px
 	font-weight: bold
 
@@ -82,7 +97,7 @@ body
 	height: 40px
 	border-radius: 0
 	margin-left: 12.5px
-	background-color: #3d4e8d
+	background-color: $user-avatar-bg
 	display: flex
 	justify-content: center
 	align-items: center
@@ -104,22 +119,22 @@ body
 	height: 15px
 
 .react-chatbot-kit-chat-bot-avatar-icon
-	fill: #494646
+	fill: $bot-avatar-bg
 	width: 22.5px
 	height: 22.5px
 
 .react-chatbot-kit-user-chat-message
-	background-color: #f1f1f1
+	background-color: $user-msg-bg
 	padding: 10px
 	border-radius: 5px
 	font-size: 0.9rem
-	color: #585858
+	color: $user-msg-color
 	font-weight: medium
 	position: relative
 	text-align: left
 
 .react-chatbot-kit-chat-bot-message
-	background-color: #2898ec
+	background-color: $bot-msg-bg
 	padding: 10px
 	border-radius: 5px
 	font-size: 0.9rem
@@ -135,7 +150,7 @@ body
 	height: 0
 	border-top: 8px solid transparent
 	border-bottom: 8px solid transparent
-	border-left: 8px solid #f1f1f1
+	border-left: 8px solid $user-msg-arrow
 	position: absolute
 	right: -7px
 	top: 13px
@@ -145,13 +160,13 @@ body
 	height: 0
 	border-top: 8px solid transparent
 	border-bottom: 8px solid transparent
-	border-right: 8px solid #2898ec
+	border-right: 8px solid $bot_msg-arrow
 	position: absolute
 	left: -7px
 	top: 13px
 
 .react-chatbot-kit-chat-bot-avatar-letter
-	color: #1d1d1d
+	color: $bot-avatar-letter-color
 	margin: 0
 	padding: 0
 
@@ -166,7 +181,7 @@ body
 	display: flex
 
 .react-chatbot-kit-chat-input
-	background-color: #232
+	background-color: $chat-input-bg
 	color: $chat-bg
 	width: 100%
 	padding: 12.5px
@@ -182,11 +197,10 @@ body
 	display: flex
 
 .react-chatbot-kit-chat-input::placeholder
-	/*color: #585858*/
 	color: $chat-bg
 
 .react-chatbot-kit-chat-btn-send
-	background-color: #2898ec
+	background-color: $chat-input-send-bg
 	width: 100px
 	border: none
 	color: $chat-bg
@@ -206,15 +220,15 @@ body
 
 .react-chatbot-kit-error-header
 	font-size: 1.3rem
-	color: #1d1d1d
+	color: $error-header
 	margin-bottom: 30px
 
 .react-chatbot-kit-error-docs
 	display: block
 	margin: 25px auto
-	color: rgb(56, 104, 139)
+	color: $error-docs-color
 	padding: 8px
-	border: 1px solid rgb(40, 152, 236)
+	border: 1px solid $error-docs-border
 	width: 130px
 	text-align: center
 	text-decoration: none
