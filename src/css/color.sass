@@ -1,0 +1,130 @@
+$body-bg: #fff
+/*color: #585858*/
+$chat-bg: #fff
+$lighter-grey: #efefef
+$chat-input-bg: #232
+$chat-input-send-bg: #2898ec
+$error-header: #1d1d1d
+$user-msg-bg: #f1f1f1
+$user-msg-color: #585858
+$user-msg-arrow: #f1f1f1
+$bot-msg-arrow: #2898ec
+$error-docs-color: rgb(56, 104, 139)
+$error-docs-border: rgb(40, 152, 236)
+$chat-header-color: #514f4f
+$user-avatar-bg: #3d4e8d
+$bot-avatar-bg: #494646
+$bot-avatar-letter-color: #1d1d1d
+
+$user-avatar-fill: #fff
+$bot-msg-color: #fff
+$bot-msg-bg: #2898ec
+$chat-border: #fff
+$bot-avatar-container-bg: #c0d8d8
+$chat-input-border-top: #c0d8d8
+$chat-input-border: #fff
+
+body
+	background-color: $body-bg
+
+.chatui
+	border: 0px solid $chat-border
+
+.react-chatbot-kit-chat-container
+
+.react-chatbot-kit-chat-inner-container
+	background-color: $chat-bg
+	border-left: 0px solid $chat-border
+
+.react-chatbot-kit-chat-message-container
+	border-left: 1px solid $chat-border
+
+.chatbot-loader-container
+
+#chatbot-loader #chatbot-loader-dot1
+
+#chatbot-loader #chatbot-loader-dot2
+
+#chatbot-loader #chatbot-loader-dot3
+
+@keyframes load
+	0%
+		opacity: 0
+		50%
+		opacity: 1
+		100%
+		opacity: 0
+	
+.react-chatbot-kit-chat-header
+	background-color: $lighter-grey
+	color: $chat-header-color
+
+.react-chatbot-kit-user-chat-message-container
+
+.react-chatbot-kit-chat-bot-message-container
+
+.react-chatbot-kit-user-avatar-container
+	background-color: $user-avatar-bg
+
+.react-chatbot-kit-chat-bot-avatar-container
+	background-color: $bot-avatar-container-bg
+
+.react-chatbot-kit-user-avatar-icon
+
+.react-chatbot-kit-chat-bot-avatar-icon
+
+.react-chatbot-kit-user-chat-message
+	background-color: $user-msg-bg
+	color: $user-msg-color
+
+.react-chatbot-kit-chat-bot-message
+	background-color: $bot-msg-bg
+	color: $bot-msg-color
+
+.react-chatbot-kit-user-chat-message-arrow
+	border-top: 8px solid transparent
+	border-bottom: 8px solid transparent
+	border-left: 8px solid $user-msg-arrow
+
+.react-chatbot-kit-chat-bot-message-arrow
+	border-top: 8px solid transparent
+	border-bottom: 8px solid transparent
+	border-right: 8px solid $bot_msg-arrow
+
+.react-chatbot-kit-chat-bot-avatar-letter
+	color: $bot-avatar-letter-color
+
+.react-chatbot-kit-chat-bot-loading-icon-container
+
+.react-chatbot-kit-chat-input-container
+
+.react-chatbot-kit-chat-input
+	background-color: $chat-input-bg
+	color: $chat-bg
+	border-top: 2px solid $chat-input-border-top
+	border-left: 2px solid $chat-input-border
+	border-bottom: 2px solid $chat-input-border
+
+.react-chatbot-kit-chat-input-form
+
+.react-chatbot-kit-chat-input::placeholder
+	color: $chat-bg
+
+.react-chatbot-kit-chat-btn-send
+	background-color: $chat-input-send-bg
+	color: $chat-bg
+
+.react-chatbot-kit-chat-btn-send-icon
+	fill: $chat-bg
+
+.react-chatbot-kit-error
+	background-color: $chat-bg
+
+.react-chatbot-kit-error-container
+
+.react-chatbot-kit-error-header
+	color: $error-header
+
+.react-chatbot-kit-error-docs
+	color: $error-docs-color
+	border: 1px solid $error-docs-border
