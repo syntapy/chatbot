@@ -1,15 +1,20 @@
-$color1: #463f3a
-$color2: #8a817c
-$color3: #bcb8b1
-$color4: #f4f3ee
-$color5: #e0afa0
+$color0: #001219
+$color1: #005f73
+$color2: #0a9396
+$color3: #94d2bd
+$color4: #e9d8a6
+$color5: #ee9b00
+$color6: #ca6702
+$color7: #bb3e03
+$color8: #ae2012
+$color9: #9b2226
 $black: #000
 $white: #fff
 
-$border-color: $color5
+$border-color: $color0
 
 body
-	background-color: $color4
+	background-color: $white
 
 .chatui
 	border: 0px solid $border-color
@@ -17,7 +22,7 @@ body
 .react-chatbot-kit-chat-container
 
 .react-chatbot-kit-chat-inner-container
-	background-color: $color4
+	background-color: $white
 	border-left: 0px solid $border-color
 
 .react-chatbot-kit-chat-message-container
@@ -41,58 +46,63 @@ body
 	
 .react-chatbot-kit-chat-header
 	background-color: $color1
-	color: $color4
+	color: $color5
 
-.react-chatbot-kit-user-chat-message-container
+/* BOT MSGS */
 
 .react-chatbot-kit-chat-bot-message-container
 
-.react-chatbot-kit-user-avatar-container
-	background-color: $color5
-
 .react-chatbot-kit-chat-bot-avatar-container
-	background-color: $color1
+	background-color: $color0
 
-.react-chatbot-kit-user-avatar-icon
+.react-chatbot-kit-chat-bot-avatar-letter
+	color: $color4
 
 .react-chatbot-kit-chat-bot-avatar-icon
 
-.react-chatbot-kit-user-chat-message
-	background-color: $color1
-	color: $color4
+.react-chatbot-kit-user-avatar-icon
 
 .react-chatbot-kit-chat-bot-message
 	background-color: $color5
-	color: $color1
-
-.react-chatbot-kit-user-chat-message-arrow
-	border-top: 8px solid transparent
-	border-bottom: 8px solid transparent
-	border-left: 8px solid $color1
+	color: $color0
 
 .react-chatbot-kit-chat-bot-message-arrow
 	border-top: 8px solid transparent
 	border-bottom: 8px solid transparent
 	border-right: 8px solid $color5
 
-.react-chatbot-kit-chat-bot-avatar-letter
-	color: $color4
-
 .react-chatbot-kit-chat-bot-loading-icon-container
 
+/* USER MSGS */
+
+.react-chatbot-kit-user-chat-message-container
+
+.react-chatbot-kit-user-avatar-container
+	background-color: $color3
+
+.react-chatbot-kit-user-chat-message
+	background-color: $color1
+	color: $white
+
+.react-chatbot-kit-user-chat-message-arrow
+	border-top: 8px solid transparent
+	border-bottom: 8px solid transparent
+	border-left: 8px solid $color1
+
+/* INPUT */
 .react-chatbot-kit-chat-input-container
 
 .react-chatbot-kit-chat-input
-	background-color: $color1
-	color: $color4
+	background-color: $color0
+	color: $color3
 	border-top: 2px solid $border-color
 	border-left: 2px solid $border-color
 	border-bottom: 2px solid $border-color
 
-.react-chatbot-kit-chat-input-form
-
 .react-chatbot-kit-chat-input::placeholder
-	color: $color5
+	color: $color4
+
+.react-chatbot-kit-chat-input-form
 
 .react-chatbot-kit-chat-btn-send
 	background-color: $color5
@@ -101,6 +111,7 @@ body
 .react-chatbot-kit-chat-btn-send-icon
 	fill: $color1
 
+/* ERRORS */
 .react-chatbot-kit-error
 	background-color: $color5
 
