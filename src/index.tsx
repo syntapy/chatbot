@@ -1,5 +1,6 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
+const font_styles = require('./css/font.sass')
 const main_styles = require('./css/main.sass')
 const color_styles = require('./css/color.sass')
 
