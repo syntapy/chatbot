@@ -11,7 +11,7 @@ $color9: #9b2226
 $black: #000
 $white: #fff
 
-$border-color: $color0
+$border-color: $color4
 
 body
 	background-color: $white
@@ -19,10 +19,14 @@ body
 .chatui
 	border: 0px solid $border-color
 
+.react-chatbot-kit-chat-header
+	background-color: $color4
+	color: $color1
+
 .react-chatbot-kit-chat-container
 
 .react-chatbot-kit-chat-inner-container
-	background-color: $white
+	background-color: lighten($color4, 20%)
 	border-left: 0px solid $border-color
 
 .react-chatbot-kit-chat-message-container
@@ -44,10 +48,6 @@ body
 		100%
 		opacity: 0
 	
-.react-chatbot-kit-chat-header
-	background-color: $color1
-	color: $color5
-
 /* BOT MSGS */
 
 .react-chatbot-kit-chat-bot-message-container
@@ -93,14 +93,14 @@ body
 .react-chatbot-kit-chat-input-container
 
 .react-chatbot-kit-chat-input
-	background-color: $color0
-	color: $color3
-	border-top: 2px solid $border-color
-	border-left: 2px solid $border-color
-	border-bottom: 2px solid $border-color
+	background-color: desaturate(lighten($color2, 20%), 60%)
+	color: $color0
+	border-top: 0px solid $border-color
+	border-left: 0px solid $border-color
+	border-bottom: 0px solid $border-color
 
 .react-chatbot-kit-chat-input::placeholder
-	color: $color4
+	color: $color0
 
 .react-chatbot-kit-chat-input-form
 
@@ -109,7 +109,7 @@ body
 	color: $color5
 
 .react-chatbot-kit-chat-btn-send-icon
-	fill: $color1
+	fill: $color0
 
 /* ERRORS */
 .react-chatbot-kit-error
