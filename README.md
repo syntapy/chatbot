@@ -2,11 +2,15 @@
 
 Just a chatbot
 
-UI is implemented using React. Still need to incorporate the AI text engine
+UI is implemented using React. Currently working on incorporatin GPT-3
 
 # Install / run
 
-Just clone and run
+After cloning, put your [OpenAI](https://beta.openai.com/account/api-keys) api key in `.apikey`, just plain without anything else
+
+Example if your api key is `key-12345678910`, that should be the entire contents of `.apikey`
+
+Then do
 
 ```
 npm install
