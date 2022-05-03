@@ -19,7 +19,7 @@ module.exports = {
 				use: [ "style-loader", 'css-loader', 'sass-loader' ]
 			},
 			{
-				test: /apikey/,
+				test: /\.apikey/,
 				type: 'asset/source',
 			}
 		],

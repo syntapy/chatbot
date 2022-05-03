@@ -4,9 +4,9 @@ const font_styles = require('./css/font.sass')
 const main_styles = require('./css/main.sass')
 const color_styles = require('./css/color.sass')
 
-const key = require('apikey')
+const key = require('../.apikey')
 //import apikey from "apikey"
-console.log(apikey)
+console.log(key)
 
 import ChatComponent from './components/ChatComponent'
 const styles = require('react-chatbot-kit/build/main.css')
